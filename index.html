@@ -25,19 +25,23 @@
 
     .vertical_photo {
       display: inline-block;
-      width: 250px;
-      height: 400px;
-      margin-left: 1.6vw;
-      margin-right: 1.6vw;
+      width: 25vw;
+      height: 40vw;
+      margin-left: 1vw;
+      margin-right: 1vw;
       margin-top: 2.2vh;
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
 
+    .vertical_photo_row {
+      display: inline-block;
+    }
+
     .horizontal_photo {
       display: inline-block;
-      width: 600px;
-      height: 400px;
+      width: 45vw;
+      height: 28vw;
       margin-left: 1vw;
       margin-right: 1vw;
       margin-top: 2.2vh;
@@ -55,13 +59,17 @@
 
   <div class="outside">
     <div>
-      <div class="vertical_photo" style="background-image: url('resources/img/marrige/dayu_1.jpg');">
+      <div class="vertical_photo_row">
+        <div class="vertical_photo" style="background-image: url('resources/img/marrige/dayu_1.jpg');">
+        </div>
+        <div class="vertical_photo" style="background-image: url('resources/img/marrige/huajia_1.jpg');">
+        </div>
       </div>
-      <div class="vertical_photo" style="background-image: url('resources/img/marrige/huajia_1.jpg');">
-      </div>
-      <div class="vertical_photo" style="background-image: url('resources/img/marrige/dongfang_2.jpg');">
-      </div>
-      <div class="vertical_photo" style="background-image: url('resources/img/marrige/heye_1.jpg');">
+      <div class="vertical_photo_row">
+        <div class="vertical_photo" style="background-image: url('resources/img/marrige/dongfang_2.jpg');">
+        </div>
+        <div class="vertical_photo" style="background-image: url('resources/img/marrige/heye_1.jpg');">
+        </div>
       </div>
     </div>
   
