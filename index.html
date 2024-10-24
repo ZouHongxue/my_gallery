@@ -1,0 +1,82 @@
+<html>
+
+<head>
+  <style>
+    *{margin: 0;padding: 0;}
+	  html,body{height: 100%;}
+	  body{background: linear-gradient(to bottom, #131313 0%,#02101c 100%);}
+	  .canvas-box{position: relative;left: 0;top: 0;z-index: -1;}
+	  .box{position: absolute;z-index: 1;color:#fff;font-family: Arial;left: 50%;top:50%;transform: translate(-50%,-50%);text-align: center;}
+	  a:link,a:hover,a:visited,a:active{text-decoration: none;color: inherit;display: block;}
+	  a{margin: 30px 0;font-size: 20px;}
+
+    .outside {
+      height: 90vh;
+      width: 90vw;
+      margin: auto;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      text-align: center;
+      z-index: 1;
+      position: absolute;
+      top: 1vh;
+      left: 2vw;
+    }
+
+    .vertical_photo {
+      display: inline-block;
+      width: 250px;
+      height: 400px;
+      margin-left: 1.6vw;
+      margin-right: 1.6vw;
+      margin-top: 2.2vh;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .horizontal_photo {
+      display: inline-block;
+      width: 600px;
+      height: 400px;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      margin-top: 2.2vh;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="canvas-box">
+    <canvas id="canvas">你的浏览器不支持canvas
+  </canvas>
+  </div>
+
+  <div class="outside">
+    <div>
+      <div class="vertical_photo" style="background-image: url('resources/img/marrige/dayu_1.jpg');">
+      </div>
+      <div class="vertical_photo" style="background-image: url('resources/img/marrige/huajia_1.jpg');">
+      </div>
+      <div class="vertical_photo" style="background-image: url('resources/img/marrige/dongfang_2.jpg');">
+      </div>
+      <div class="vertical_photo" style="background-image: url('resources/img/marrige/heye_1.jpg');">
+      </div>
+    </div>
+  
+    <div>
+      <div class="horizontal_photo" style="background-image: url('resources/img/marrige/huadeng_1.jpg');">
+      </div>
+      <div class="horizontal_photo" style="background-image: url('resources/img/marrige/huadeng_2.jpg');">
+      </div>
+    </div>
+  </div>
+  <script src="resources/js/star_sky.js"></script>
+</body>
+
+<script>
+  
+</script>
+
+</html>
