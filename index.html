@@ -1,18 +1,30 @@
 <html>
-
 <head>
   <style>
-    *{margin: 0;padding: 0;}
-	  html,body{height: 100%;}
-	  body{background: linear-gradient(to bottom, #131313 0%,#02101c 100%);}
-	  .canvas-box{position: relative;left: 0;top: 0;z-index: -1;}
-	  .box{position: absolute;z-index: 1;color:#fff;font-family: Arial;left: 50%;top:50%;transform: translate(-50%,-50%);text-align: center;}
-	  a:link,a:hover,a:visited,a:active{text-decoration: none;color: inherit;display: block;}
-	  a{margin: 30px 0;font-size: 20px;}
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #131313 0%, #02101c 100%);
+    }
+
+    .canvas-box {
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: -1;
+    }
 
     .outside {
       height: 90vh;
-      width: 70vw;
+      width: 90vw;
       margin: auto;
       text-align: center;
       z-index: 1;
@@ -27,9 +39,9 @@
       display: inline-block;
       width: 25vw;
       height: 40vw;
-      margin-left: 1vw;
-      margin-right: 1vw;
-      margin-top: 2.2vh;
+      margin-left: 3vw;
+      margin-right: 3vw;
+      margin-top: 5vw;
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -44,9 +56,22 @@
       height: 28vw;
       margin-left: 1vw;
       margin-right: 1vw;
-      margin-top: 2.2vh;
+      margin-top: 5vh;
       background-repeat: no-repeat;
       background-size: 100% 100%;
+    }
+
+    .horizontal_photo:hover, .vertical_photo:hover {
+            transform: scale(1.06);
+    }
+
+    .vertical_photo, .horizontal_photo {
+      border-style: groove; 
+      border-width: 1vw;
+      border-color: #ffe140;
+      box-shadow: 
+      inset 10px 10px 10px rgba(255, 255, 255, 0.7),
+      inset -10px -10px 10px rgba(255, 255, 255, 0.7);
     }
   </style>
 </head>
